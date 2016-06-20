@@ -1,0 +1,18 @@
+{
+  "dev": {
+    "username": "dev",
+    "password": "development",
+    "database": "questionenginejs_dev",
+    "host": "127.0.0.1",
+    "port": "3306",
+    "driver": "mysql"
+  },
+  "test": {
+      "username": "dev",
+      "password": "development",
+      "database": "questionenginejs_test",
+      "host": "127.0.0.1",
+      "port": "3306",
+      "driver": "mysql"
+    }
+}

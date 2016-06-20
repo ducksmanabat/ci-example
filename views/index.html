@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html ng-app="questionEngineApp">
+<head>
+  <title>Question Engine</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+  <!-- Angular scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="mainController.js"></script>
+
+</head>
+<body>
+  <div ng-controller="mainController">
+    <form>
+      <input type="text" ng-model="questionId"/>
+      <input type="submit" value="Get Question Id" ng-click="getQuestion(questionId)"/>
+    </form>
+    <div class="question" style="display: none;">
+      <b> {{ question.text }} </b>
+      <ul>
+        <li ng-repeat="questionChoice in question.QuestionChoices">
+          {{ questionChoice.text }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

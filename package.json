@@ -1,0 +1,19 @@
+{
+  "name": "questionengine_js",
+  "version": "1.0.1",
+  "description": "",
+  "main": "./app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha --timeout 15000 --ui tdd"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "*",
+    "express": "^4.13.4",
+    "mocha": "*",
+    "mysql": "*",
+    "sequelize": "*"
+  }
+}
